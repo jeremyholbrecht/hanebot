@@ -1,5 +1,6 @@
 package me.jeremyholbrecht;
 
+import me.jeremyholbrecht.commands.aoshi.AoshiGreeting;
 import me.jeremyholbrecht.commands.chiho.ChihoGreeting;
 import me.jeremyholbrecht.commands.sonoe.SonoeGreeting;
 import me.jeremyholbrecht.commands.tetsu.TetsuGreeting;
@@ -16,6 +17,7 @@ public class HaneBot extends ListenerAdapter {
         JDA haneBot = JDABuilder.createDefault("")
                 .setActivity(Activity.playing("Hane Visual Novel"))
                 .addEventListeners(
+                        new AoshiGreeting(),
                         new TetsuGreeting(),
                         new SonoeGreeting(),
                         new ChihoGreeting()
