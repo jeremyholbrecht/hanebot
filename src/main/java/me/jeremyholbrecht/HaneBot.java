@@ -1,6 +1,7 @@
 package me.jeremyholbrecht;
 
 import me.jeremyholbrecht.commands.aoshi.AoshiGreeting;
+import me.jeremyholbrecht.commands.aoshi.AoshiPicrew;
 import me.jeremyholbrecht.commands.chiho.ChihoGreeting;
 import me.jeremyholbrecht.commands.haruki.HarukiGreeting;
 import me.jeremyholbrecht.commands.sonoe.SonoeGreeting;
@@ -19,6 +20,7 @@ public class HaneBot extends ListenerAdapter {
                 .setActivity(Activity.playing("Hane Visual Novel"))
                 .addEventListeners(
                         new AoshiGreeting(),
+                        new AoshiPicrew(),
                         new ChihoGreeting(),
                         new HarukiGreeting(),
                         new SonoeGreeting(),
