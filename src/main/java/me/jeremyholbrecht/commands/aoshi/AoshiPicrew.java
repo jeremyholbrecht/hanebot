@@ -8,7 +8,6 @@ import java.io.File;
 import java.util.Random;
 
 public class AoshiPicrew extends ListenerAdapter {
-
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {
         if (!event.getAuthor().isBot()){

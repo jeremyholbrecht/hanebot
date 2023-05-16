@@ -16,7 +16,7 @@ public class HaneBot extends ListenerAdapter {
     public static void main(String[] args) throws LoginException {
 
         // add token here
-        JDA haneBot = JDABuilder.createDefault("")
+        JDA haneBot = JDABuilder.createDefault("MTEwMDQ4Nzg0MDI4NDAyNDkxMw.GvEqJd.fnkg2KvM_-d7otbTKssNIV-xjQFFfanspkYzq0")
                 .setActivity(Activity.playing("Hane Visual Novel"))
                 .addEventListeners(
                         new AoshiGreeting(),
