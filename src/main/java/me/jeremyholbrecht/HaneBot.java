@@ -7,6 +7,7 @@ import me.jeremyholbrecht.commands.chiho.ChihoPicrew;
 import me.jeremyholbrecht.commands.haruki.HarukiGreeting;
 import me.jeremyholbrecht.commands.haruki.HarukiPicrew;
 import me.jeremyholbrecht.commands.sonoe.SonoeGreeting;
+import me.jeremyholbrecht.commands.sonoe.SonoePicrew;
 import me.jeremyholbrecht.commands.tetsu.TetsuGreeting;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -28,6 +29,7 @@ public class HaneBot extends ListenerAdapter {
                         new HarukiGreeting(),
                         new HarukiPicrew(),
                         new SonoeGreeting(),
+                        new SonoePicrew(),
                         new TetsuGreeting()
                 )
                 .build();
